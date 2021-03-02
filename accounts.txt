@@ -1,0 +1,6 @@
+00001 John Doe             A 00350.00
+00002 James Doe            A 00999.00
+00003 Jane Doe             A 01000.00
+00004 John Smith           A 00000.00
+00005 Richard Smith        A 10000.00
+00000 END_OF_FILE          A 00000.00
