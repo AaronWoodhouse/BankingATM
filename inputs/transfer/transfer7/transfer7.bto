@@ -1,0 +1,9 @@
+Welcome to the banking system; please type 'login' to continue:
+Enter a session type, 'standard' or 'admin':
+Enter account holder's name:
+Reading current bank account file...
+Login Accepted
+Please enter a transaction: transfer
+Please enter the account number that the money will be transfered from:
+Please enter the account number that the money will be transfered to:
+Account number not found, please try again:

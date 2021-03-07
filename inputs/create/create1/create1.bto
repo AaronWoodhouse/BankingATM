@@ -1,0 +1,15 @@
+Welcome to the banking system; please type 'login' to continue:
+Enter a session type, 'standard' or 'admin':
+Enter account holder's name:
+Reading current bank account file...
+Login Accepted
+Please enter a transaction:
+Error: not logged in as admin
+Please enter a transaction: 
+Logging out...
+Welcome to the banking system; please type 'login' to continue:
+Enter a session type, 'standard' or 'admin':
+Reading current bank account file...
+Login Accepted
+Please enter a transaction:
+Enter account holder's name:

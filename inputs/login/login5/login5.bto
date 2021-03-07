@@ -1,0 +1,3 @@
+Welcome to the banking system; please type 'login' to continue:
+Enter session type, 'standard' or 'admin':
+Error: 'owner' session type is not allowed
