@@ -13,7 +13,7 @@
 
 using namespace std;
 
-int main()
+int main(int argc, char** argv)
 {
 	bool isAdmin = false;
 	bool loop = true;
@@ -22,6 +22,13 @@ int main()
 	string input;
 	vector<AccountHolder> accountholders;
 	vector<Transaction> transactions;
+
+	if (argc != 3)
+	{
+		cout << "The banking program requires 2 arguments: first is the input file, and the other is the output file.";
+		cout << argc;
+		exit(1);
+	}
 
 	cout << "Welcome to the banking system; please type 'login' to continue: ";
 
@@ -34,7 +41,7 @@ int main()
 		{
 			ifstream inFile;
 
-			inFile.open("accounts.txt", ios::in);
+			inFile.open(argv[1], ios::in);
 
 			if (!inFile.fail())
 			{
@@ -168,12 +175,7 @@ int main()
 					{
 						transactions.push_back(Transaction("00", user->getFullName(), 0, 0.0, "  "));
 
-						time_t t = time(NULL);
-						char now[1000];
-						struct tm * p = localtime(&t);
-						strftime(now, 1000, "%A%B%d%Y%H%M%S", p);
-
-						ofstream outFile("transaction-" + string(now) + ".txt", ios::app);
+						ofstream outFile(argv[2], ios::app);
 
 						if (!outFile.fail())
 						{
@@ -663,7 +665,7 @@ int main()
 						//Only run transaction if user is an admin
 						if (isAdmin)
 						{
-							AccountHolder *tempUser;
+							AccountHolder *tempUser = NULL;
 
 							cout << "Enter account holder's name: ";
 							cin.ignore();
@@ -752,7 +754,7 @@ int main()
 						//Only run transaction if user is an admin
 						if (isAdmin)
 						{
-							AccountHolder *tempUser;
+							AccountHolder *tempUser = NULL;
 
 							cout << "Enter account holder's name: ";
 							cin.ignore();
@@ -822,7 +824,7 @@ int main()
 						//Only run transaction if user is an admin
 						if (isAdmin)
 						{
-							AccountHolder *tempUser;
+							AccountHolder *tempUser = NULL;
 
 							cout << "Enter account holder's name: ";
 							cin.ignore();
@@ -915,6 +917,7 @@ int main()
 				cout << "Something went wrong; please try again later.\n";
 			}
 
+			isAdmin = false;
 			loop = true;
 			cout << "Welcome to the banking system; please type 'login' to continue: ";
 		}
