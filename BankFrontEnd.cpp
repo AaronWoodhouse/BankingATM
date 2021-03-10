@@ -25,12 +25,12 @@ int main(int argc, char** argv)
 
 	if (argc != 3)
 	{
-		cout << "The banking program requires 2 arguments: first is the input file, and the other is the output file.";
-		cout << argc;
+		cout << "The banking program requires 2 arguments: first is the input file, and the other is the output file.\n";
+
 		exit(1);
 	}
 
-	cout << "Welcome to the banking system; please type 'login' to continue: ";
+	cout << "Welcome to the banking system; please type 'login' to continue: \n";
 
 	while (loop)
 	{
@@ -92,7 +92,7 @@ int main(int argc, char** argv)
 
 				inFile.close();
 
-				cout << "Enter a session type, 'standard' or 'admin': ";
+				cout << "Enter a session type, 'standard' or 'admin': \n";
 
 				//Determine user type
 				while (loop)
@@ -107,7 +107,7 @@ int main(int argc, char** argv)
 					}
 					else if (input.compare("standard") != 0)
 					{
-						cout << "Error: '" + input + "' session type is not allowed";
+						cout << "Error: '" + input + "' session type is not allowed\n";
 					}
 					else
 					{
@@ -119,7 +119,7 @@ int main(int argc, char** argv)
 				//Get account holder's name if the user is not an admin
 				if (!isAdmin)
 				{
-					cout << "Enter account holder's name: ";
+					cout << "Enter account holder's name: \n";
 					cin.ignore();
 
 					while (loop)
@@ -142,7 +142,7 @@ int main(int argc, char** argv)
 						}
 						else
 						{
-							cout << "Error: account name '" + input + "' not found (Please input name correctly): ";
+							cout << "Error: account name '" + input + "' not found (Please input name correctly): \n";
 						}
 					}
 				}
@@ -164,7 +164,7 @@ int main(int argc, char** argv)
 					double amount = 0.0;
 					string other = "  ";
 
-					cout << "Please enter a transaction: ";
+					cout << "Please enter a transaction: \n";
 					cin >> input;
 
 					if (input.compare("login") == 0)
@@ -204,7 +204,7 @@ int main(int argc, char** argv)
 						//Get account holder's name if the user is an admin
 						if (isAdmin)
 						{
-							cout << "Enter account holder's name: ";
+							cout << "Enter account holder's name: \n";
 							cin.ignore();
 
 							while (loop)
@@ -227,7 +227,7 @@ int main(int argc, char** argv)
 								}
 								else
 								{
-									cout << "Error: account name '" + input + "' not found (Please input name correctly): ";
+									cout << "Error: account name '" + input + "' not found (Please input name correctly): \n";
 								}
 							}
 
@@ -240,7 +240,7 @@ int main(int argc, char** argv)
 
 						name = tempUser->getFullName();
 
-						cout << "Please enter the account number: ";
+						cout << "Please enter the account number: \n";
 
 						Account *account = &Account(0, 0, ' ');
 
@@ -256,12 +256,12 @@ int main(int argc, char** argv)
 							}
 							catch (int)
 							{
-								cout << "The user '" + name + "' does not own that account, please try again: ";
+								cout << "The user '" + name + "' does not own that account, please try again: \n";
 							}
 						}
 						loop = true;
 
-						cout << "Enter the amount to withdraw: ";
+						cout << "Enter the amount to withdraw: \n";
 
 						while (loop)
 						{
@@ -269,11 +269,11 @@ int main(int argc, char** argv)
 
 							if (amount > withdrawLimit && !isAdmin)
 							{
-								cout << "Error: Amount entered exceeds withdraw limit for the session. Remaining withdraw amount: $" << withdrawLimit << ". Please try again: ";
+								cout << "Error: Amount entered exceeds withdraw limit for the session. Remaining withdraw amount: $" << withdrawLimit << ". Please try again: \n";
 							}
 							else if (amount > account->getFunds())
 							{
-								cout << "Error: Insufficient funds, funds in account: $" << account->getFunds() << ", please try again: ";
+								cout << "Error: Insufficient funds, funds in account: $" << account->getFunds() << ", please try again: \n";
 							}
 							else
 							{
@@ -298,7 +298,7 @@ int main(int argc, char** argv)
 						//Get account holder's name if the user is an admin
 						if (isAdmin)
 						{
-							cout << "Enter account holder's name: ";
+							cout << "Enter account holder's name: \n";
 							cin.ignore();
 
 							while (loop)
@@ -321,7 +321,7 @@ int main(int argc, char** argv)
 								}
 								else
 								{
-									cout << "Error: account name '" + input + "' not found (Please input name correctly): ";
+									cout << "Error: account name '" + input + "' not found (Please input name correctly): \n";
 								}
 							}
 
@@ -336,7 +336,7 @@ int main(int argc, char** argv)
 
 						string transferName;
 
-						cout << "Please enter the account number that the money will be transfered from: ";
+						cout << "Please enter the account number that the money will be transfered from: \n";
 
 						Account *firstAccount = &Account(0, 0, ' ');
 
@@ -352,12 +352,12 @@ int main(int argc, char** argv)
 							}
 							catch (int)
 							{
-								cout << "The user '" + name + "' does not own that account, please try again: ";
+								cout << "The user '" + name + "' does not own that account, please try again: \n";
 							}
 						}
 						loop = true;
 
-						cout << "Please enter the account number that the money will be transfered to: ";
+						cout << "Please enter the account number that the money will be transfered to: \n";
 
 						Account *secondAccount = &Account(0, 0, ' ');
 
@@ -380,12 +380,12 @@ int main(int argc, char** argv)
 							}
 							if (loop)
 							{
-								cout << "Account number not found, please try again: ";
+								cout << "Account number not found, please try again: \n";
 							}
 						}
 						loop = true;
 
-						cout << "Enter the amount to transfer: ";
+						cout << "Enter the amount to transfer: \n";
 
 						while (loop)
 						{
@@ -393,11 +393,11 @@ int main(int argc, char** argv)
 
 							if (amount > transferLimit && !isAdmin)
 							{
-								cout << "Error: Amount entered exceeds transfer limit for the session. Remaining transfer amount: $" << transferLimit << ". Please try again: ";
+								cout << "Error: Amount entered exceeds transfer limit for the session. Remaining transfer amount: $" << transferLimit << ". Please try again: \n";
 							}
 							else if (amount > firstAccount->getFunds())
 							{
-								cout << "Error: Insufficient funds, funds in account: $" << firstAccount->getFunds() << ", please try again: ";
+								cout << "Error: Insufficient funds, funds in account: $" << firstAccount->getFunds() << ", please try again: \n";
 							}
 							else
 							{
@@ -424,7 +424,7 @@ int main(int argc, char** argv)
 						//Get account holder's name if the user is an admin
 						if (isAdmin)
 						{
-							cout << "Enter account holder's name: ";
+							cout << "Enter account holder's name: \n";
 							cin.ignore();
 
 							while (loop)
@@ -447,7 +447,7 @@ int main(int argc, char** argv)
 								}
 								else
 								{
-									cout << "Error: account name '" + input + "' not found (Please input name correctly): ";
+									cout << "Error: account name '" + input + "' not found (Please input name correctly): \n";
 								}
 							}
 
@@ -460,7 +460,7 @@ int main(int argc, char** argv)
 
 						name = tempUser->getFullName();
 
-						cout << "Please enter the account number: ";
+						cout << "Please enter the account number: \n";
 
 						Account *account = &Account(0, 0, ' ');
 
@@ -476,12 +476,12 @@ int main(int argc, char** argv)
 							}
 							catch (int)
 							{
-								cout << "The user '" + name + "' does not own that account, please try again: ";
+								cout << "The user '" + name + "' does not own that account, please try again: \n";
 							}
 						}
 						loop = true;
 
-						cout << "Enter the amount to pay: ";
+						cout << "Enter the amount to pay: \n";
 
 						while (loop)
 						{
@@ -489,11 +489,11 @@ int main(int argc, char** argv)
 
 							if (amount > paymentLimit && !isAdmin)
 							{
-								cout << "Error: Amount entered exceeds payment limit for the session. Remaining payment amount: $" << paymentLimit << ". Please try again: ";
+								cout << "Error: Amount entered exceeds payment limit for the session. Remaining payment amount: $" << paymentLimit << ". Please try again: \n";
 							}
 							else if (amount > account->getFunds())
 							{
-								cout << "Error: Insufficient funds, funds in account: $" << account->getFunds() << ", please try again: ";
+								cout << "Error: Insufficient funds, funds in account: $" << account->getFunds() << ", please try again: \n";
 							}
 							else
 							{
@@ -505,7 +505,7 @@ int main(int argc, char** argv)
 
 						loop = true;
 
-						cout << "Enter the payee: ";
+						cout << "Enter the payee: \n";
 
 						while (loop)
 						{
@@ -518,7 +518,7 @@ int main(int argc, char** argv)
 							}
 							else
 							{
-								cout << "Please enter one of the following companies (EC, CQ, or FI): ";
+								cout << "Please enter one of the following companies (EC, CQ, or FI): \n";
 							}
 						}
 						loop = true;
@@ -536,7 +536,7 @@ int main(int argc, char** argv)
 						//Get account holder's name if the user is an admin
 						if (isAdmin)
 						{
-							cout << "Enter account holder's name: ";
+							cout << "Enter account holder's name: \n";
 							cin.ignore();
 
 							while (loop)
@@ -559,7 +559,7 @@ int main(int argc, char** argv)
 								}
 								else
 								{
-									cout << "Error: account name '" + input + "' not found (Please input name correctly): ";
+									cout << "Error: account name '" + input + "' not found (Please input name correctly): \n";
 								}
 							}
 
@@ -572,7 +572,7 @@ int main(int argc, char** argv)
 
 						name = tempUser->getFullName();
 
-						cout << "Please enter the account number: ";
+						cout << "Please enter the account number: \n";
 
 						Account *account = &Account(0, 0, ' ');
 
@@ -588,12 +588,12 @@ int main(int argc, char** argv)
 							}
 							catch (int)
 							{
-								cout << "The user '" + name + "' does not own that account, please try again: ";
+								cout << "The user '" + name + "' does not own that account, please try again: \n";
 							}
 						}
 						loop = true;
 
-						cout << "Enter the amount to deposit: ";
+						cout << "Enter the amount to deposit: \n";
 
 						while (loop)
 						{
@@ -601,7 +601,7 @@ int main(int argc, char** argv)
 
 							if (amount > 100000 - account->getFunds())
 							{
-								cout << "Error: Amount exceeds the account max of $100,000, funds in account: $" << account->getFunds() << ", please try again: ";
+								cout << "Error: Amount exceeds the account max of $100,000, funds in account: $" << account->getFunds() << ", please try again: \n";
 							}
 							else
 							{
@@ -623,7 +623,7 @@ int main(int argc, char** argv)
 						//Only run transaction if user is an admin
 						if (isAdmin)
 						{
-							cout << "Enter account holder's name: ";
+							cout << "Enter account holder's name: \n";
 							cin.ignore();
 
 							getline(cin, name);
@@ -631,7 +631,7 @@ int main(int argc, char** argv)
 							number = maxAccount + 1;
 							maxAccount++;
 
-							cout << "Enter the amount to deposit in new account: ";
+							cout << "Enter the amount to deposit in new account: \n";
 
 							while (loop)
 							{
@@ -639,7 +639,7 @@ int main(int argc, char** argv)
 
 								if (amount > 100000)
 								{
-									cout << "Error: Amount exceeds the account max of $100,000, please try again: ";
+									cout << "Error: Amount exceeds the account max of $100,000, please try again: \n";
 								}
 								else
 								{
@@ -667,7 +667,7 @@ int main(int argc, char** argv)
 						{
 							AccountHolder *tempUser = NULL;
 
-							cout << "Enter account holder's name: ";
+							cout << "Enter account holder's name: \n";
 							cin.ignore();
 
 							while (loop)
@@ -690,7 +690,7 @@ int main(int argc, char** argv)
 								}
 								else
 								{
-									cout << "Error: account name '" + input + "' not found (Please input name correctly): ";
+									cout << "Error: account name '" + input + "' not found (Please input name correctly): \n";
 								}
 							}
 
@@ -698,7 +698,7 @@ int main(int argc, char** argv)
 
 							name = tempUser->getFullName();
 
-							cout << "Please enter the account number: ";
+							cout << "Please enter the account number: \n";
 
 							Account *account = &Account(0, 0, ' ');
 
@@ -714,7 +714,7 @@ int main(int argc, char** argv)
 								}
 								catch (int)
 								{
-									cout << "The user '" + name + "' does not own that account, please try again: ";
+									cout << "The user '" + name + "' does not own that account, please try again: \n";
 								}
 							}
 							loop = true;
@@ -756,7 +756,7 @@ int main(int argc, char** argv)
 						{
 							AccountHolder *tempUser = NULL;
 
-							cout << "Enter account holder's name: ";
+							cout << "Enter account holder's name: \n";
 							cin.ignore();
 
 							while (loop)
@@ -779,7 +779,7 @@ int main(int argc, char** argv)
 								}
 								else
 								{
-									cout << "Error: account name '" + input + "' not found (Please input name correctly): ";
+									cout << "Error: account name '" + input + "' not found (Please input name correctly): \n";
 								}
 							}
 
@@ -787,7 +787,7 @@ int main(int argc, char** argv)
 
 							name = tempUser->getFullName();
 
-							cout << "Please enter the account number: ";
+							cout << "Please enter the account number: \n";
 
 							Account *account = &Account(0, 0, ' ');
 
@@ -803,7 +803,7 @@ int main(int argc, char** argv)
 								}
 								catch (int)
 								{
-									cout << "The user '" + name + "' does not own that account, please try again: ";
+									cout << "The user '" + name + "' does not own that account, please try again: \n";
 								}
 							}
 							loop = true;
@@ -826,7 +826,7 @@ int main(int argc, char** argv)
 						{
 							AccountHolder *tempUser = NULL;
 
-							cout << "Enter account holder's name: ";
+							cout << "Enter account holder's name: \n";
 							cin.ignore();
 
 							while (loop)
@@ -849,7 +849,7 @@ int main(int argc, char** argv)
 								}
 								else
 								{
-									cout << "Error: account name '" + input + "' not found (Please input name correctly): ";
+									cout << "Error: account name '" + input + "' not found (Please input name correctly): \n";
 								}
 							}
 
@@ -857,7 +857,7 @@ int main(int argc, char** argv)
 
 							name = tempUser->getFullName();
 
-							cout << "Please enter the account number: ";
+							cout << "Please enter the account number: \n";
 
 							Account *account = &Account(0, 0, ' ');
 
@@ -873,12 +873,12 @@ int main(int argc, char** argv)
 								}
 								catch (int)
 								{
-									cout << "The user '" + name + "' does not own that account, please try again: ";
+									cout << "The user '" + name + "' does not own that account, please try again: \n";
 								}
 							}
 							loop = true;
 
-							cout << "Enter the payment plan: ";
+							cout << "Enter the payment plan: \n";
 
 							while (loop)
 							{
@@ -891,7 +891,7 @@ int main(int argc, char** argv)
 								}
 								else
 								{
-									cout << "Please enter one of the following plans (SP or NP): ";
+									cout << "Please enter one of the following plans (SP or NP): \n";
 								}
 							}
 							loop = true;
@@ -908,7 +908,7 @@ int main(int argc, char** argv)
 					else
 					{
 						cout << input + " is not a valid transaction\n";
-						cout << "Please enter a transaction: ";
+						cout << "Please enter a transaction: \n";
 					}
 				}
 			}
@@ -919,18 +919,18 @@ int main(int argc, char** argv)
 
 			isAdmin = false;
 			loop = true;
-			cout << "Welcome to the banking system; please type 'login' to continue: ";
+			cout << "Welcome to the banking system; please type 'login' to continue: \n";
 		}
 		//exit the program
 		else if (input.compare("exit") == 0)
 		{
 			loop = false;
-			cout << "Thank you for using the banking system";
+			cout << "Thank you for using the banking system\n";
 		}
 		//handle invalid inputs
 		else
 		{
-			cout << "Error: cannot perform transactions until you are logged in; please type 'login' to continue: ";
+			cout << "Error: cannot perform transactions until you are logged in; please type 'login' to continue: \n";
 		}
 	}
 
