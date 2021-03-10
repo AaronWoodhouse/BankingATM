@@ -7,10 +7,12 @@ do
 	for j in `ls $i`
 	do
 		echo "Test $j"
-		../BankFrontEnd.exe ../accounts.txt $i/$j/$j.atf < $i/$j/$j.inp > $i/$j/$j.out
+		../BankFrontEnd.exe ../accounts.txt $i/$j/$j.atf < $i/$j/$j.inp > $i/$j/$j.ato
 	done
 done
 
+`
+# AT THE MOMENT WE DONT NEED THIS
 for i in `ls`
 do
 	for j in `ls $i`
@@ -20,3 +22,4 @@ do
 		diff $i/$j/$j.atf $i/$j/$j.etf > diffTransaction.txt
 	done
 done
+`
