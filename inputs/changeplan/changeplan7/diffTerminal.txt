@@ -1,0 +1,27 @@
+2c2
+< Enter a session type, 'standard' or 'admin': 
+---
+> Enter a session type, 'standard' or 'admin':
+5,9c5,9
+< Please enter a transaction: 
+< Enter account holder's name: 
+< Please enter the account number: 
+< The user 'John Doe' does not own that account, please try again: 
+< Enter the payment plan: 
+---
+> Please enter a transaction:
+> Enter account holder's name:
+> Please enter the account number:
+> The user 'John Doe' does not own that account, please try again:
+> Enter the payment plan:
+11c11
+< Please enter a transaction: 
+---
+> Please enter a transaction:
+13,14c13,14
+< Welcome to the banking system; please type 'login' to continue: 
+< Thank you for using the banking system
+---
+> Welcome to the banking system; please type 'login' to continue:
+> Thank you for using the banking system
+\ No newline at end of file

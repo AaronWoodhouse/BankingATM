@@ -11,15 +11,12 @@ do
 	done
 done
 
-`
-# AT THE MOMENT WE DONT NEED THIS
 for i in `ls`
 do
 	for j in `ls $i`
 	do
 		echo "Checks for differences on: $j"
-		diff $i/$j/$j.ato $i/$j/$j.bto > diffTerminal.txt
-		diff $i/$j/$j.atf $i/$j/$j.etf > diffTransaction.txt
+		diff $i/$j/$j.ato $i/$j/$j.bto > $i/$j/diffTerminal.txt
+		diff $i/$j/$j.atf $i/$j/$j.etf > $i/$j/diffTransaction.txt
 	done
 done
-`

@@ -1,3 +1,9 @@
-Welcome to the banking system; please type 'login' to continue:
-Enter session type, 'standard' or 'admin':
+Welcome to the banking system; please type 'login' to continue: 
+Enter a session type, 'standard' or 'admin': 
 Error: 'owner' session type is not allowed
+Reading current bank account file...
+Login Accepted
+Please enter a transaction: 
+Logging out...
+Welcome to the banking system; please type 'login' to continue: 
+Thank you for using the banking system

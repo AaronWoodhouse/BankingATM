@@ -1,0 +1,25 @@
+1,2c1,2
+< Welcome to the banking system; please type 'login' to continue: 
+< Enter a session type, 'standard' or 'admin': 
+---
+> Welcome to the banking system; please type 'login' to continue:
+> Enter a session type, 'standard' or 'admin':
+5,8c5,8
+< Please enter a transaction: 
+< Enter account holder's name: 
+< Please enter the account number: 
+< Enter the amount to deposit: 
+---
+> Please enter a transaction:
+> Enter account holder's name:
+> Please enter the account number:
+> Enter the amount to deposit:
+10c10
+< Please enter a transaction: 
+---
+> Please enter a transaction:
+12,13c12
+< Welcome to the banking system; please type 'login' to continue: 
+< Thank you for using the banking system
+---
+> Welcome to the banking system; please type 'login' to continue:

@@ -1,0 +1,18 @@
+1,3c1,3
+< Welcome to the banking system; please type 'login' to continue: 
+< Enter a session type, 'standard' or 'admin': 
+< Enter account holder's name: 
+---
+> Welcome to the banking system; please type 'login' to continue:
+> Enter a session type, 'standard' or 'admin':
+> Enter account holder's name:
+6,7c6,7
+< Please enter a transaction: 
+< Please enter the account number: 
+---
+> Please enter a transaction: Please enter a transaction:
+> Please enter the account number:
+9c9
+< Error: Insufficient funds, funds in account: $350, please try again: 
+---
+> Error: Insufficient funds, funds in account: $350, please try again:

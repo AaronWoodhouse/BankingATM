@@ -1,0 +1,14 @@
+1,2c1,2
+< Welcome to the banking system; please type 'login' to continue: 
+< Enter a session type, 'standard' or 'admin': 
+---
+> Welcome to the banking system; please type 'login' to continue:
+> Enter a session type, 'standard' or 'admin':
+5c5
+< Please enter a transaction: 
+---
+> Please enter a transaction:
+7c7
+< Error: account name 'Jon Smi' not found (Please input name correctly): 
+---
+> Error: account name 'Jon Smi' not found (Please input name correctly):

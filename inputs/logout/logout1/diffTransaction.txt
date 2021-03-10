@@ -1,0 +1,5 @@
+1c1
+< 00 John Doe             00000 00000.00   
+---
+> 00_John_Doe____________00000_00000.00___
+\ No newline at end of file

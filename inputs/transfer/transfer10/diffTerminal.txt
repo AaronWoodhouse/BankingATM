@@ -1,0 +1,22 @@
+1,2c1,2
+< Welcome to the banking system; please type 'login' to continue: 
+< Enter a session type, 'standard' or 'admin': 
+---
+> Welcome to the banking system; please type 'login' to continue:
+> Enter a session type, 'standard' or 'admin':
+5,9c5,9
+< Please enter a transaction: 
+< Enter account holder's name: 
+< Please enter the account number that the money will be transfered from: 
+< Please enter the account number that the money will be transfered to: 
+< Enter the amount to transfer: 
+---
+> Please enter a transaction:
+> Enter account holder's name:
+> Please enter the account number that the money will be transfered from:
+> Please enter the account number that the money will be transfered to:
+> Enter the amount to transfer:
+13c13
+< Welcome to the banking system; please type 'login' to continue: 
+---
+> Welcome to the banking system; please type 'login' to continue:

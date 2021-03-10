@@ -1,0 +1,16 @@
+1c1
+< Welcome to the banking system; please type 'login' to continue: 
+---
+> Welcome to the banking system; please type 'login' to continue:
+3c3
+< Enter account holder's name: 
+---
+> Enter account holder's name:
+6c6
+< Please enter a transaction: 
+---
+> Please enter a transaction:
+8c8
+< Welcome to the banking system; please type 'login' to continue: 
+---
+> Welcome to the banking system; please type 'login' to continue:

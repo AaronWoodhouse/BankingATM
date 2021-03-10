@@ -1,0 +1,19 @@
+2c2
+< Enter a session type, 'standard' or 'admin': 
+---
+> Enter a session type, 'standard' or 'admin':
+5,13c5,8
+< Please enter a transaction: 
+< Enter account holder's name: 
+< Please enter the account number: 
+< The user 'John Smith' does not own that account, please try again: 
+< Deletion successful
+< Please enter a transaction: 
+< Logging out...
+< Welcome to the banking system; please type 'login' to continue: 
+< Thank you for using the banking system
+---
+> Please enter a transaction: Please enter a transaction:
+> Enter account holder's name:
+> Please enter the account number:
+> The user 'John Smith' does not own that account, please try again:

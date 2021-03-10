@@ -1,0 +1,12 @@
+2c2
+< Enter a session type, 'standard' or 'admin': 
+---
+> Enter a session type, 'standard' or 'admin':
+5,7c5,7
+< Please enter a transaction: 
+< Enter account holder's name: 
+< Please enter the account number: 
+---
+> Please enter a transaction:
+> Enter account holder's name:
+> Please enter the account number:

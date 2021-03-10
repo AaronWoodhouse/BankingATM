@@ -1,0 +1,20 @@
+1c1
+< Welcome to the banking system; please type 'login' to continue: 
+---
+> Welcome to the banking system; please type 'login' to continue:
+3c3
+< Enter account holder's name: 
+---
+> Enter account holder's name:
+6,10c6,10
+< Please enter a transaction: 
+< Please enter the account number that the money will be transfered from: 
+< Please enter the account number that the money will be transfered to: 
+< Enter the amount to transfer: 
+< Error: Amount entered exceeds transfer limit for the session. Remaining transfer amount: $1000. Please try again: 
+---
+> Please enter a transaction:
+> Please enter the account number that the money will be transfered from:
+> Please enter the account number that the money will be transfered to:
+> Enter the amount to transfer:
+> Error: Amount entered exceeds transfer limit for the session. Remaining transfer amount: $1000. Please try again:

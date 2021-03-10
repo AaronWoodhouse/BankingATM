@@ -1,0 +1,26 @@
+1,3c1,3
+< Welcome to the banking system; please type 'login' to continue: 
+< Enter a session type, 'standard' or 'admin': 
+< Enter account holder's name: 
+---
+> Welcome to the banking system; please type 'login' to continue:
+> Enter a session type, 'standard' or 'admin':
+> Enter account holder's name:
+6,9c6,9
+< Please enter a transaction: 
+< Please enter the account number: 
+< Enter the amount to withdraw: 
+< Error: Amount entered exceeds withdraw limit for the session. Remaining withdraw amount: $500. Please try again: 
+---
+> Please enter a transaction:
+> Please enter the account number:
+> Enter the amount to withdraw:
+> Error: Amount entered exceeds withdraw limit for the session. Remaining withdraw amount: $500. Please try again:
+11c11
+< Please enter a transaction: 
+---
+> Please enter a transaction:
+13c13
+< Welcome to the banking system; please type 'login' to continue: 
+---
+> Welcome to the banking system; please type 'login' to continue:

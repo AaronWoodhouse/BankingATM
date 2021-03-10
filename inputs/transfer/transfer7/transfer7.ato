@@ -1,9 +1,15 @@
-Welcome to the banking system; please type 'login' to continue: Enter a session type, 'standard' or 'admin': Enter account holder's name: Reading current bank account file...
+Welcome to the banking system; please type 'login' to continue: 
+Enter a session type, 'standard' or 'admin': 
+Enter account holder's name: 
+Reading current bank account file...
 Login Accepted
-Please enter a transaction: Transfer is not a valid transaction
-Please enter a transaction: Please enter a transaction: 1 is not a valid transaction
-Please enter a transaction: Please enter a transaction: 10 is not a valid transaction
-Please enter a transaction: Please enter a transaction: 2 is not a valid transaction
-Please enter a transaction: Please enter a transaction: 100 is not a valid transaction
-Please enter a transaction: Please enter a transaction: Logging out...
-Welcome to the banking system; please type 'login' to continue: Thank you for using the banking system
+Please enter a transaction: 
+Please enter the account number that the money will be transfered from: 
+Please enter the account number that the money will be transfered to: 
+Account number not found, please try again: 
+Enter the amount to transfer: 
+Transfer successful
+Please enter a transaction: 
+Logging out...
+Welcome to the banking system; please type 'login' to continue: 
+Thank you for using the banking system

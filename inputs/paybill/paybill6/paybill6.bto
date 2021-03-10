@@ -7,3 +7,9 @@ Enter account holder's name:
 Please enter the account number:
 Enter the amount to pay: 
 Error: Insufficient funds, funds in account: $350, please try again:
+Enter the payee: 
+Payment successful
+Please enter a transaction: 
+Logging out...
+Welcome to the banking system; please type 'login' to continue: 
+Thank you for using the banking system

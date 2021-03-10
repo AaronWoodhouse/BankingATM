@@ -1,0 +1,16 @@
+2c2
+< Enter a session type, 'standard' or 'admin': 
+---
+> Enter a session type, 'standard' or 'admin':
+5c5
+< Please enter a transaction: 
+---
+> Please enter a transaction:
+7c7
+< Please enter a transaction: 
+---
+> Please enter a transaction:
+9c9
+< Welcome to the banking system; please type 'login' to continue: 
+---
+> Welcome to the banking system; please type 'login' to continue:

@@ -1,0 +1,39 @@
+1,3c1,2
+< Welcome to the banking system; please type 'login' to continue: 
+< Enter a session type, 'standard' or 'admin': 
+< Enter account holder's name: 
+---
+> Welcome to the banking system; please type 'login' to continue:
+> Enter a session type, 'standard' or 'admin':
+6c5
+< Please enter a transaction: 
+---
+> Please enter a transaction:
+8c7
+< Please enter a transaction: 
+---
+> Please enter a transaction:
+10,11c9,10
+< Welcome to the banking system; please type 'login' to continue: 
+< Enter a session type, 'standard' or 'admin': 
+---
+> Welcome to the banking system; please type 'login' to continue:
+> Enter a session type, 'standard' or 'admin':
+14,17c13,16
+< Please enter a transaction: 
+< Enter account holder's name: 
+< Please enter the account number: 
+< Enter the payment plan: 
+---
+> Please enter a transaction:
+> Enter account holder's name:
+> Please enter the account number:
+> Enter the payment plan:
+19c18
+< Please enter a transaction: 
+---
+> Please enter a transaction:
+21c20
+< Welcome to the banking system; please type 'login' to continue: 
+---
+> Welcome to the banking system; please type 'login' to continue:

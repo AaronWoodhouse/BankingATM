@@ -7,3 +7,9 @@ Please enter a transaction:
 Please enter the account number:
 Enter the amount to pay: 
 Error: Amount entered exceeds payment limit for the session. Remaining payment amount: $2000. Please try again:
+Enter the payee: 
+Payment successful
+Please enter a transaction: 
+Logging out...
+Welcome to the banking system; please type 'login' to continue: 
+Thank you for using the banking system

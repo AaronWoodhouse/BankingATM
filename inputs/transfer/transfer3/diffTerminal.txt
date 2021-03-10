@@ -1,0 +1,12 @@
+1,3c1,3
+< Welcome to the banking system; please type 'login' to continue: 
+< Enter a session type, 'standard' or 'admin': 
+< Enter account holder's name: 
+---
+> Welcome to the banking system; please type 'login' to continue:
+> Enter a session type, 'standard' or 'admin':
+> Enter account holder's name:
+7c7
+< Please enter the account number that the money will be transfered from: 
+---
+> Please enter the account number that the money will be transfered from:
