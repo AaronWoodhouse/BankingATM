@@ -5,3 +5,10 @@ Login Accepted
 Please enter a transaction:
 Enter account holder's name:
 Error: account name 'Jon Do' not found (Please input name correctly):
+Please enter the account number:
+Enter the payment plan:
+Plan Changed
+Please enter a transaction:
+Logging out...
+Welcome to the banking system; please type 'login' to continue:
+Thank you for using the banking system
