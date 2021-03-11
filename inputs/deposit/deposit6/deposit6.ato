@@ -11,10 +11,8 @@ Please enter a transaction:
 Enter account holder's name: 
 Please enter the account number: 
 Enter the amount to withdraw: 
+Error: Insufficient funds, funds in account: $350, please try again: 
 Withdrawal successful
-Please enter a transaction: 
-100 is not a valid transaction
-Please enter a transaction: 
 Please enter a transaction: 
 Logging out...
 Welcome to the banking system; please type 'login' to continue: 

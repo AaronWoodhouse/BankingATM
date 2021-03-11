@@ -14,8 +14,7 @@
 > Enter account holder's name:
 > Enter the amount to deposit in new account:
 > Error: Amount exceeds the account max of $100,000, please try again:
-12,13c12
+12c12
 < Welcome to the banking system; please type 'login' to continue: 
-< Thank you for using the banking system
 ---
 > Welcome to the banking system; please type 'login' to continue:

@@ -14,22 +14,13 @@
 > Enter account holder's name:
 > Please enter the account number:
 > Enter the amount to deposit:
-10,21c10,14
+10,13c10,13
 < Please enter a transaction: 
 < Enter account holder's name: 
 < Please enter the account number: 
 < Enter the amount to withdraw: 
-< Withdrawal successful
-< Please enter a transaction: 
-< 100 is not a valid transaction
-< Please enter a transaction: 
-< Please enter a transaction: 
-< Logging out...
-< Welcome to the banking system; please type 'login' to continue: 
-< Thank you for using the banking system
 ---
 > Please enter a transaction: withdrawal
 > Enter account holder's name:
 > Please enter the account number:
 > Enter the amount to withdraw:
-> Error: Insufficient funds, funds in account: $350, please try again:

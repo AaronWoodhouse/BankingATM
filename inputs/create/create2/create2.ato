@@ -4,6 +4,7 @@ Reading current bank account file...
 Login Accepted
 Please enter a transaction: 
 Enter account holder's name: 
+The name can be no longer than 20 characters. Please try again: 
 Enter the amount to deposit in new account: 
 Creation successful
 Please enter a transaction: 

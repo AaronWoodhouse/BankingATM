@@ -12,16 +12,10 @@
 > Please enter a transaction:
 > Enter account holder's name:
 > Please enter the account number:
-9,17c9,11
+9,11c9,11
 < Please enter a transaction: 
 < Enter account holder's name: 
 < Please enter the account number: 
-< Enter the amount to deposit: 
-< Deposit successful
-< Please enter a transaction: 
-< Logging out...
-< Welcome to the banking system; please type 'login' to continue: 
-< Thank you for using the banking system
 ---
 > Please enter a transaction:
 > Enter account holder's name:
