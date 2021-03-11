@@ -399,6 +399,10 @@ int main(int argc, char** argv)
 							{
 								cout << "Error: Insufficient funds, funds in account: $" << firstAccount->getFunds() << ", please try again: \n";
 							}
+							else if (amount < 0)
+							{
+								cout << "Error: Amount must be a positive number, please try again: \n";
+							}
 							else
 							{
 								firstAccount->setFunds(firstAccount->getFunds() - amount);
@@ -605,7 +609,6 @@ int main(int argc, char** argv)
 							}
 							else
 							{
-								account->setFunds(account->getFunds() + amount);
 								loop = false;
 							}
 						}
@@ -626,7 +629,22 @@ int main(int argc, char** argv)
 							cout << "Enter account holder's name: \n";
 							cin.ignore();
 
-							getline(cin, name);
+							while (loop)
+							{
+								getline(cin, name);
+
+								if (name.length() > 20)
+								{
+									cout << "The name can be no longer than 20 characters. Please try again: \n";
+									cin.ignore();
+								}
+								else
+								{
+									loop = false;
+								}
+							}
+
+							loop = true;
 
 							number = maxAccount + 1;
 							maxAccount++;
@@ -809,6 +827,18 @@ int main(int argc, char** argv)
 							loop = true;
 
 							cout << "Account Disabled\n";
+
+							if (tempUser->removeAccount(number) == 0)
+							{
+								bool removed = false;
+								for (int i = 0; i < accountholders.size() && !removed; i++)
+								{
+									if (accountholders.at(i).getFullName().compare(name) == 0)
+									{
+										accountholders.erase(accountholders.begin() + i);
+									}
+								}
+							}
 
 							transactions.push_back(Transaction(code, name, number, amount, other));
 						}
